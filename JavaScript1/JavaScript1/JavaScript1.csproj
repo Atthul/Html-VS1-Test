@@ -1,0 +1,371 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87F820A9-8CAA-4B6E-AA1B-42780A9183A8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JavaScript1</RootNamespace>
+    <AssemblyName>JavaScript1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AlertBox.aspx" />
+    <Content Include="ConfirmBox.aspx" />
+    <Content Include="J8.aspx" />
+    <Content Include="JavaScript.js" />
+    <Content Include="JS1.aspx" />
+    <Content Include="JS10.aspx" />
+    <Content Include="JS11.aspx" />
+    <Content Include="JS12.aspx" />
+    <Content Include="JS13.aspx" />
+    <Content Include="JS14.aspx" />
+    <Content Include="JS15.aspx" />
+    <Content Include="JS17.aspx" />
+    <Content Include="JS19.aspx" />
+    <Content Include="JS2.aspx" />
+    <Content Include="JS20.aspx" />
+    <Content Include="JS21.aspx" />
+    <Content Include="JS3.aspx" />
+    <Content Include="JS4.aspx" />
+    <Content Include="JS5.aspx" />
+    <Content Include="JS6.aspx" />
+    <Content Include="JS7.aspx" />
+    <Content Include="JS9.aspx" />
+    <Content Include="Obj1.aspx" />
+    <Content Include="Oop1.aspx" />
+    <Content Include="Oop2.aspx" />
+    <Content Include="Oop3.aspx" />
+    <Content Include="Oop4.aspx" />
+    <Content Include="PromptBox.aspx" />
+    <Content Include="Validation2.aspx" />
+    <Content Include="Validation3.aspx" />
+    <Content Include="Validiation.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="JS18.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlertBox.aspx.cs">
+      <DependentUpon>AlertBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlertBox.aspx.designer.cs">
+      <DependentUpon>AlertBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmBox.aspx.cs">
+      <DependentUpon>ConfirmBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmBox.aspx.designer.cs">
+      <DependentUpon>ConfirmBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="J8.aspx.cs">
+      <DependentUpon>J8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="J8.aspx.designer.cs">
+      <DependentUpon>J8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS1.aspx.cs">
+      <DependentUpon>JS1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS1.aspx.designer.cs">
+      <DependentUpon>JS1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS10.aspx.cs">
+      <DependentUpon>JS10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS10.aspx.designer.cs">
+      <DependentUpon>JS10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS11.aspx.cs">
+      <DependentUpon>JS11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS11.aspx.designer.cs">
+      <DependentUpon>JS11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS12.aspx.cs">
+      <DependentUpon>JS12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS12.aspx.designer.cs">
+      <DependentUpon>JS12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS13.aspx.cs">
+      <DependentUpon>JS13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS13.aspx.designer.cs">
+      <DependentUpon>JS13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS14.aspx.cs">
+      <DependentUpon>JS14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS14.aspx.designer.cs">
+      <DependentUpon>JS14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS15.aspx.cs">
+      <DependentUpon>JS15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS15.aspx.designer.cs">
+      <DependentUpon>JS15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS17.aspx.cs">
+      <DependentUpon>JS17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS17.aspx.designer.cs">
+      <DependentUpon>JS17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS19.aspx.cs">
+      <DependentUpon>JS19.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS19.aspx.designer.cs">
+      <DependentUpon>JS19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS2.aspx.cs">
+      <DependentUpon>JS2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS2.aspx.designer.cs">
+      <DependentUpon>JS2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS20.aspx.cs">
+      <DependentUpon>JS20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS20.aspx.designer.cs">
+      <DependentUpon>JS20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS21.aspx.cs">
+      <DependentUpon>JS21.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS21.aspx.designer.cs">
+      <DependentUpon>JS21.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS3.aspx.cs">
+      <DependentUpon>JS3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS3.aspx.designer.cs">
+      <DependentUpon>JS3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS4.aspx.cs">
+      <DependentUpon>JS4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS4.aspx.designer.cs">
+      <DependentUpon>JS4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS5.aspx.cs">
+      <DependentUpon>JS5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS5.aspx.designer.cs">
+      <DependentUpon>JS5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS6.aspx.cs">
+      <DependentUpon>JS6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS6.aspx.designer.cs">
+      <DependentUpon>JS6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS7.aspx.cs">
+      <DependentUpon>JS7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS7.aspx.designer.cs">
+      <DependentUpon>JS7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS9.aspx.cs">
+      <DependentUpon>JS9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS9.aspx.designer.cs">
+      <DependentUpon>JS9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Obj1.aspx.cs">
+      <DependentUpon>Obj1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Obj1.aspx.designer.cs">
+      <DependentUpon>Obj1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oop1.aspx.cs">
+      <DependentUpon>Oop1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oop1.aspx.designer.cs">
+      <DependentUpon>Oop1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oop2.aspx.cs">
+      <DependentUpon>Oop2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oop2.aspx.designer.cs">
+      <DependentUpon>Oop2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oop3.aspx.cs">
+      <DependentUpon>Oop3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oop3.aspx.designer.cs">
+      <DependentUpon>Oop3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oop4.aspx.cs">
+      <DependentUpon>Oop4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oop4.aspx.designer.cs">
+      <DependentUpon>Oop4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PromptBox.aspx.cs">
+      <DependentUpon>PromptBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PromptBox.aspx.designer.cs">
+      <DependentUpon>PromptBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="JS18.aspx.cs">
+      <DependentUpon>JS18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS18.aspx.designer.cs">
+      <DependentUpon>JS18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validation2.aspx.cs">
+      <DependentUpon>Validation2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validation2.aspx.designer.cs">
+      <DependentUpon>Validation2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validation3.aspx.cs">
+      <DependentUpon>Validation3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validation3.aspx.designer.cs">
+      <DependentUpon>Validation3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validiation.aspx.cs">
+      <DependentUpon>Validiation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validiation.aspx.designer.cs">
+      <DependentUpon>Validiation.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60592</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60592/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

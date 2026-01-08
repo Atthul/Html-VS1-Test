@@ -1,0 +1,22 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AlertBox.aspx.cs" Inherits="JavaScript1.AlertBox" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script>
+        function Fun_alert() {
+            alert("haii.... I am an alert box")
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <input id="Submit1" type="submit" value="submit" onclick="Fun_alert();"/>
+            <asp:Button ID="Button1" runat="server" Text="Button" OnClientClick="Fun_alert();"/>
+        </div>
+    </form>
+</body>
+</html>
